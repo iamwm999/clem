@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Bright Minds Tutoring</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>Bright Minds Tutoring</strong></div>
+      <div class="dropdown">
+        <div class="menu">☰ Menu</div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="calendar.html">Book a Session</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact Us</h1>
+    <form action="mailto:clemrallc@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <footer>
+    <p>Quick Links:</p>
+    <a href="index.html">Home</a> |
+    <a href="shop.html">Shop</a> |
+    <a href="about.html">About</a> |
+    <a href="services.html">Services</a> |
+    <a href="calendar.html">Book</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
