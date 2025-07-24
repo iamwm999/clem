@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1st Class Realty</title>
+  <link rel="stylesheet" href="re.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img src="vis/relogo.png" alt="1st Class Realty Logo" />
+    <h1>Your Premier Los Angeles Real Estate Agency</h1>
+    <nav><a href="#contact">Home</a></nav>
+  </header>
+
+  <section class="hero">
+    <img src="vis/relogo.png" alt="1st Class Realty Logo" />
+    <p></p>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      1st Class Realty has over 35 years of experience in the Los Angeles real estate market. As a full-service agency, we specialize in both residential and commercial properties. Our experienced team is dedicated to providing personalized, professional service to guide you through buying, selling, or investing in real estate. With deep local market knowledge and a strong commitment to client satisfaction, we're here to help you every step of the way.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 1st Class Realty. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById(\"contactForm\").addEventListener(\"submit\", function (e) {
+      e.preventDefault();
+      const formMessage = document.getElementById(\"formMessage\");
+
+      fetch(\"https://formspree.io/f/moqgrgyl\", {
+        method: \"POST\",
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: new FormData(this)
+      })
+      .then(response => {
+        if (response.ok) {
+          formMessage.textContent = \"Thanks for your message!\";
+          this.reset();
+        } else {
+          formMessage.textContent = \"Oops! Something went wrong.\";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

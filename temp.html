@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <title>ClemRae Resources –Coming Soon</title>
+ <!-- Google Font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+ <style>
+  :root {
+   --primary: #2d6cdf;
+   --bg-start: #f7f9fc;
+   --bg-end: #dfe8f8;
+   --text-main: #1d1d1f;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+
+  body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem;
+   background: linear-gradient(135deg,var(--bg-start) 0%,var(--bg-end) 100%);
+   color: var(--text-main);
+   text-align: center;
+  }
+
+  .card {
+   background: #fff;
+   width: 100%;
+   max-width: 540px;
+   padding: 3rem max(5vw,3rem);
+   border-radius: 1.5rem;
+   box-shadow: 0 15px 35px rgba(0,0,0,.1);
+  }
+
+  h1 {
+   font-size: clamp(2rem,6vw,3rem);
+   font-weight: 600;
+   margin-bottom: .5rem;
+   color: var(--primary);
+  }
+
+  h2 {
+   font-size: clamp(1.25rem,4vw,1.75rem);
+   font-weight: 500;
+   margin-bottom: 1.25rem;
+   line-height: 1.4;
+  }
+
+  p {
+   font-size: 1rem;
+   line-height: 1.6;
+   margin-bottom: 1.75rem;
+  }
+
+  form {
+   display: flex;
+   gap: .5rem;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+
+  input[type=email] {
+   padding: .75rem 1rem;
+   font-size: 1rem;
+   border: 2px solid var(--primary);
+   border-radius: .75rem;
+   flex: 1 1 200px;
+   min-width: 0;
+  }
+
+  button {
+   padding: .75rem 1.25rem;
+   font-size: 1rem;
+   font-weight: 600;
+   background: var(--primary);
+   color: #fff;
+   border: none;
+   border-radius: .75rem;
+   cursor: pointer;
+   transition: background .2s;
+  }
+
+  button:hover {background: #1e54b3;}
+
+  .footer {
+   margin-top: 2rem;
+   font-size: .875rem;
+   opacity: .75;
+  }
+
+  a {color: var(--primary); text-decoration: none;}
+ </style>
+</head>
+<body>
+ <div class="card">
+  <h1>ClemRae Resources</h1>
+  <h2>Personalized Resources for All</h2>
+
+  <p>
+   We’re sharpening pencils and prepping lesson plans to empower elementary learners.<br>
+   Our full website will be live soon. Want to be the first to know?
+  </p>
+
+  <!-- Replace the form action with your email marketing service or backend endpoint
+  <form action="https://example.com/subscribe" method="POST">
+   <input type="email" name="email" placeholder="Your email address" required>
+   <button type="submit">Notify Me</button>
+  </form>
+   -->
+
+  <div class="footer">
+   Reach us at <a href="mailto:main@clemrae.com">main@clemrae.com</a>
+  </div>
+ </div>
+</body>
+</html>

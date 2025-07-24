@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bright Minds Tutoring</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Clem Rae</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- 🌟 HEADER -->
   <header>
     <nav>
-      <div><strong>Bright Minds Tutoring</strong></div>
+      <div><strong>Clem Rae</strong></div>
       <div class="dropdown">
-        <div class="menu">☰ Menu</div>
-        <div class="nav-links">
+        <div class="menu" aria-label="Open navigation menu">☰ Menu</div>
+        <div class="nav-links" role="navigation" aria-label="Main navigation">
           <a href="shop.html">Shop</a>
           <a href="about.html">About</a>
           <a href="services.html">Services</a>
@@ -23,20 +25,55 @@
     </nav>
   </header>
 
+  <!-- 💬 HERO SECTION -->
   <main>
-    <h1>Welcome to Bright Minds Tutoring</h1>
-    <p>Your partner in academic excellence. We provide personalized tutoring for students of all levels.</p>
+    <section class="hero">
+      <h1>Welcome to Clem Rae</h1>
+      <p>Your partner in academic excellence. We provide personalized tutoring for students of all levels.</p>
+      <a href="calendar.html" class="button-primary">Get Started</a>
+    </section>
+
+    <!-- 💬 TESTIMONIALS -->
+    <section class="testimonials">
+      <h2>What Our Students Say</h2>
+      <div class="testimonial-card">
+        <p>"Clem Rae helped my daughter gain confidence in math. Her grades improved dramatically!"</p>
+        <span>– Parent of 5th Grader</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"This tutoring service made learning fun and engaging. I actually looked forward to our sessions!"</p>
+        <span>– High School Student</span>
+      </div>
+    </section>
+
+    <!-- 🖼️ GALLERY -->
+    <section class="gallery">
+      <h2>Learning in Action</h2>
+      <div class="gallery-grid">
+        <img src="https://via.placeholder.com/300x200" alt="Student 1 working" />
+        <img src="https://via.placeholder.com/300x200" alt="Virtual session" />
+        <img src="https://via.placeholder.com/300x200" alt="Tutoring tools" />
+        <img src="https://via.placeholder.com/300x200" alt="Engaged learners" />
+      </div>
+    </section>
   </main>
 
+  <!-- 🔗 FOOTER -->
   <footer>
-    <p>Quick Links:</p>
-    <a href="shop.html">Shop</a> |
-    <a href="about.html">About</a> |
-    <a href="services.html">Services</a> |
-    <a href="calendar.html">Book</a> |
-    <a href="contact.html">Contact</a>
+    <p><strong>Quick Links:</strong></p>
+    <nav aria-label="Footer navigation">
+      <a href="shop.html">Shop</a> |
+      <a href="about.html">About</a> |
+      <a href="services.html">Services</a> |
+      <a href="calendar.html">Book</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p style="margin-top: 1rem;">&copy; <span id="year"></span> Clem Rae. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
